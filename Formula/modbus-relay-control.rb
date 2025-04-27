@@ -2,7 +2,7 @@ class ModbusRelayControl < Formula
   desc "Modbus TCP Relay Board Controller CLI"
   homepage "https://github.com/willcurtis/modbus-relay-control"
   url "https://github.com/willcurtis/modbus-relay-control/archive/refs/tags/v1.0.2.tar.gz"
-  sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  sha256 "2c49cbc130eded2eed01bfc9e2c62917214c3a230ae254a2298d9a0748762562"
   license "MIT"
 
   depends_on "python@3.11"
