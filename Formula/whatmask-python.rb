@@ -1,8 +1,8 @@
 class WhatmaskPython < Formula
   desc "A Python recreation of the classic whatmask tool"
   homepage "https://github.com/willcurtis/whatmask-python"
-  url "https://github.com/willcurtis/whatmask-python/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "4cfa78a89dbc25644923011827aa831ffe1a6f96bea332b7ee44ec542ccf026a"
+  url "https://github.com/willcurtis/whatmask-python/archive/refs/tags/v1.0.2.tar.gz"
+  sha256 "51fb2f803b03194bc84166c2d0548e5d8b68fe742463ce04ab6182f27768f4c3"
   license "MIT"
 
   depends_on "python@3.11"
