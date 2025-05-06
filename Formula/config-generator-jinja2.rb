@@ -3,8 +3,8 @@ class ConfigGeneratorJ2 < Formula
   include Language::Python::Virtualenv
 
   desc "Bulk-generate network device configs from Jinja2 templates and CSV"
-  homepage "https://github.com/yourusername/configuration-generator"
-  url "https://github.com/yourusername/configuration-generator/archive/v1.0.0.tar.gz"
+  homepage "https://github.com/willcurtis/configuration-generator"
+  url "https://github.com/willcurtis/configuration-generator/archive/v1.0.0.tar.gz"
   sha256 "fca5918300b2b6dbeaeba70a8e220d4a4dfec2321fcbf83d4fd28819cf6c131d"
   license "MIT"
 
