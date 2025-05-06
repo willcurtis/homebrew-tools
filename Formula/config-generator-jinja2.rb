@@ -1,5 +1,5 @@
-# Formula for config-generator-j2
-class ConfigGeneratorJ2 < Formula
+# Formula for config-generator-jinja2
+class ConfigGeneratorJinja2 < Formula
   include Language::Python::Virtualenv
 
   desc "Bulk-generate network device configs from Jinja2 templates and CSV"
@@ -17,14 +17,13 @@ class ConfigGeneratorJ2 < Formula
 
   def install
     virtualenv_install_with_resources
-    bin.install_symlink libexec/"bin/config_generator_jinja2.py" => "config-generator-j2"
+    # Install the script under a nicer command name:
+    bin.install_symlink libexec/"bin/config_generator_jinja2.py" => "config-generator-jinja2"
   end
 
   test do
-    # Verify help output
-    assert_match "usage: config-generator-j2", shell_output("#{bin}/config-generator-j2 -h")
+    assert_match "usage: config-generator-jinja2", shell_output("#{bin}/config-generator-jinja2 -h")
 
-    # Minimal template & CSV smoke-test
     (testpath/"templates").mkpath
     (testpath/"templates/test.j2").write <<~EOS
       hostname {{ hostname }}
@@ -34,7 +33,7 @@ class ConfigGeneratorJ2 < Formula
       testbox
     EOS
 
-    system "#{bin}/config-generator-j2",
+    system "#{bin}/config-generator-jinja2",
            "--template-dir", "templates",
            "--template-file", "test.j2",
            "--csv", "devices.csv",
