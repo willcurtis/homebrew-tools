@@ -12,7 +12,7 @@ class ConfigGeneratorJinja2 < Formula
 
   resource "jinja2" do
     url "https://files.pythonhosted.org/packages/source/J/Jinja2/Jinja2-3.1.2.tar.gz"
-    sha256 "31351a702a408a9e7595a8fc6150fc3f43bb6bf7e319770cbc0db9df9437e852"
+    sha256 "6fc11f3e57e7dc71dc1b56e07189c871fcd9f063cfe6f0dd926d2fb559ede4ed"
   end
 
   def install
